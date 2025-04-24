@@ -1,7 +1,8 @@
-num = 3
-if num > 0:
-    print(num, "is a positive number.")
+actual_cost = float(input(" Please Enter the Actual Product Price: "))
+sale_amount = float(input(" Please Enter the Sales Amount: "))
 
-num = -9
-if num > 0:
-    print(num, "is a positive number.")
+if (sale_amount > actual_cost):
+    amount = sale_amount - actual_cost
+    print("Total Profit = {}".format(amount))
+else:
+    print("No Profit!!!")
